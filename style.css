@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+header {
+  background-color: black;
+}
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  padding-inline: 30px;
+
+  & h2 {
+    background-color: black;
+    font-family: "Satoshi-Regular", sans-serif;
+  }
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+  }
+
+  & ul {
+    display: flex;
+    align-items: center;
+
+    & li {
+      margin-left: 20px;
+
+      & a {
+        text-decoration: none;
+        font-family: "Satoshi-BoldItalic", sans-serif;
+      }
+    }
+  }
+
+  & #presentation {
+    background-image: url(ressources/images/hero-banner.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    height: 92%;
+  }
+}
