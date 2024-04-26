@@ -44,7 +44,7 @@ Le menu doit passer par dessus le contenu au scroll.
 
 ![Bouton](./ressources/button-hover.png)
 
-### Footer menu 
+### Footer menu
 
 ![Footer menu](./ressources/footer-menu-hover.png)
 
