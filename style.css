@@ -119,7 +119,6 @@ main {
     "moral moral sauvetage";
   row-gap: 20px;
   column-gap: 20px;
-  margin-top: 45px;
 
   article {
     display: flex;
@@ -153,6 +152,112 @@ main {
   }
 }
 
+#section-heros {
+  width: 95%;
+
+  & button {
+    font-family: "Satoshi-Black", sans-serif;
+    padding: 16px;
+    background-color: var(--main-color);
+    border-radius: 17px;
+    width: fit-content;
+    margin-bottom: 45px;
+    display: block;
+    margin-inline: auto;
+    margin-block: 35px;
+    text-transform: uppercase;
+  }
+}
+
+#grid-heros {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f";
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-top: 45px;
+
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Satoshi-Rgular", sans-serif;
+    font-size: 13px;
+
+    & img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    & .heros-text {
+      position: absolute;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      line-height: 25px;
+      padding-inline: 20px;
+      width: 100%;
+    }
+
+    & .nom-heros {
+      font-family: "Satoshi-Black", sans-serif;
+      font-size: 20px;
+      padding-top: 25px;
+      padding-bottom: 5px;
+    }
+
+    & .description-heros {
+      font-size: 15px;
+      padding-bottom: 20px;
+    }
+
+    & .hover-text {
+      background-color: rgba(112, 159, 221, 0.6);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 15px;
+      font-family: "Satoshi-MediumItalic", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      text-align: center;
+      display: none;
+    }
+
+    &:hover .hover-text {
+      display: block;
+    }
+  }
+
+  #cat-astrophic {
+    grid-area: a;
+  }
+
+  #carotte-woman {
+    grid-area: b;
+  }
+
+  #ultraquenarde {
+    grid-area: c;
+  }
+
+  #poulpy {
+    grid-area: d;
+  }
+
+  #orang {
+    grid-area: e;
+  }
+
+  #superime {
+    grid-area: f;
+  }
+}
+
 #blue-text {
   color: var(--main-color);
 }
@@ -161,6 +266,13 @@ h3 {
   font-family: "Satoshi-Black", sans-serif;
   font-size: 30px;
   margin: 60px;
+  text-align: center;
+  margin-block: 100px;
+}
+
+/* le premier h3 est mal positionné à cause du landing je ne sais pas pourquoi*/
+#section-services h3 {
+  margin-top: 60px;
 }
 
 h4 {
