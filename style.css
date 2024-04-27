@@ -7,6 +7,10 @@
   color: white;
 }
 
+html {
+  font-family: "Satoshi-Regular", sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -161,10 +165,9 @@ main {
     background-color: var(--main-color);
     border-radius: 17px;
     width: fit-content;
-    margin-bottom: 45px;
     display: block;
     margin-inline: auto;
-    margin-block: 35px;
+    margin-top: 35px;
     text-transform: uppercase;
   }
 }
@@ -255,6 +258,57 @@ main {
 
   #superime {
     grid-area: f;
+  }
+}
+
+#section-temoignages {
+  & #articles-container {
+    display: flex;
+
+    /* marche po */
+    justify-content: space-evenly;
+
+    & article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+      height: 450px;
+      text-align: center;
+      background-color: blueviolet;
+      margin: 20px;
+      border-radius: 120px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      & div {
+        box-sizing: content-box;
+        width: 200px;
+        border-radius: 50%;
+        border: var(--main-color) solid 10px;
+        overflow: hidden;
+        margin-bottom: 40px;
+
+        & img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+
+      & .client-name {
+        width: 200px;
+        margin-bottom: 20px;
+        font-family: "Satoshi-Black", sans-serif;
+      }
+
+      & cite {
+        width: 200px;
+        font-family: "Satoshi-Italic", sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
   }
 }
 
